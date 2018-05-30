@@ -1,0 +1,174 @@
+﻿
+1. General Windows Commands
+
+i)  systeminfo
+	To Display computer properties and configuration
+ii) ver 
+	To Display the Windows version
+
+Example:
+C:\data>ver
+Microsoft Windows [Version 10.0.10586]
+C:\data>
+
+iii)name: 
+	used to change drive
+
+Example:
+C:\data>E:
+E:\>
+
+iv)start
+	run specified program in seperate window.
+
+example:
+C:\data>start notepad
+
+v) chdir
+	display current directory location.
+
+Example:
+C:\Users\manoj>chdir
+C:\Users\manoj
+
+vi) cls
+	Clears the screen
+
+vii) dir
+	list files and directory
+
+viii)exit 
+	used to exit from cmd.
+
+ix) echo
+	to display text on command prompt
+
+Example:
+C:\>echo date —>display date on screen
+
+x) date and time 
+	used to display current date and time
+
+Example:
+C:\>echo %date% –>display value to date
+21-03-2016
+C:\>date
+The current date is: 21-03-2016
+Enter the new date: (dd-mm-yy)
+
+C:\>echo %time%
+19:05:26.01
+C:\>time
+The current time is: 19:10:21.14
+Enter the new time:
+C:\>
+
+2. Directory Related commands
+
+i)mkdir
+	used to make(create) directory
+
+C:\data>mkdir program
+
+ii)rmdir
+	used to remove directory.
+
+C:\data>rmdir program
+
+iii)cd-->change directory.
+
+cd dirname	
+cd .. --> go one back to directory
+cd /  --> go to root directory.
+
+C:\>cd data
+C:\data>
+
+C:\data\program>cd ..
+C:\data>
+
+C:\data\program>cd \
+C:\>
+
+3. File Related commands
+
+i) create file 
+	start  notepad  <fileName>
+Example:
+C:\data>start notepad Test.java
+
+ii)type
+	display the content of file
+	type <fileName>
+
+Example:
+C:\data>type Test.java
+public class Test{
+public static void main(String[] args){
+System.out.println(“welcome to java !!”);
+}
+}
+iii)ren or rename:
+	used to rename the file
+	ren <fileName> <new fileName>
+
+C:\data>ren Test.java First.java
+
+iv)copy
+	used to copy content of one file to second file.
+	copy <source> <destination>
+Example:
+C:\data>copy First.java Test.java
+1 file(s) copied.
+
+C:\data>type Test.java
+public class Test{
+public static void main(String[] args){
+System.out.println(“welcome to java !!”);
+}
+}
+C:\data>type First.java
+public class Test{
+public static void main(String[] args){
+System.out.println(“welcome to java !!”);
+}
+}
+
+v) move
+	used to move(cut) content of one file to second file.
+	move <source> <destination>
+Example:
+C:\data>type First.java
+public class Test{
+public static void main(String[] args){
+System.out.println(“welcome to java !!”);
+}
+}
+C:\data>move first.java Test.java
+Overwrite C:\data\Test.java? (Yes/No/All): yes
+1 file(s) moved.
+
+C:\data>type Test.java
+public class Test{
+public static void main(String[] args){
+System.out.println(“welcome to java !!”);
+}
+}
+
+4. Network  Related commands
+
+1. ipconfig
+	ipconfig displays basic information like IP address,
+	subnet mask,router’s ipaddress,DNS Server IPaddress etc.
+
+to display more information: ipconfig /ALL
+
+2. ping
+	allows you to send a signal to another device on the network to see if it's active
+
+3. tracert
+	If you send packet to device before the packet reaches to device servers,
+	it will go through many different routers(hops) and tracert command will display all that routers.
+
+4. nslookup
+	nslookup will fetch the DNS records for given domain name OR IPaddress.
